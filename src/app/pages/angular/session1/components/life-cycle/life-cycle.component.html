@@ -1,0 +1,13 @@
+<div class="life-cycle-container">
+  <nz-steps [nzCurrent]="8" nzProgressDot>
+    <nz-step nzTitle="ngOnChanges" nzDescription="當輸入/輸出的綁定值被改變時調用"></nz-step>
+    <nz-step nzTitle="ngOnInit" nzDescription="在第一次ngOnChanges完成後調用"></nz-step>
+    <nz-step nzTitle="ngDoCheck" nzDescription="每一次OnChange檢測後調用"></nz-step>
+    <nz-step nzTitle="ngAfterContentInit" nzDescription="Component內容初始化後調用"></nz-step>
+    <nz-step nzTitle="ngAfterContentChecked" nzDescription="Component每次檢查內容時調用"></nz-step>
+    <nz-step nzTitle="ngAfterViewInit" nzDescription="View內容初始化後調用"></nz-step>
+    <nz-step nzTitle="ngAfterViewChecked" nzDescription="View每次檢查內容時調用"></nz-step>
+    <nz-step nzTitle="ngOnDestroy" nzDescription="當Component每次銷毀前調用"></nz-step>
+  </nz-steps>
+</div>
+

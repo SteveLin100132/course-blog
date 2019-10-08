@@ -1,0 +1,27 @@
+<nz-collapse [nzBordered]="false" nzAccordion>
+  <nz-collapse-panel nzHeader="app.component.html" nzActive="true">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[0]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app.component.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+          <code *ngIf="code" [highlight]="code[1]"></code>
+        </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="Result" nzActive="false">
+    <div class="textfield">
+      <input nz-input nzSize="default" style="margin-bottom: 24px;" #textfield />
+      <button nz-button nzType="primary" (click)="printCode(textfield)">
+        <i nz-icon nzType="caret-right"></i>Search
+      </button>
+    </div>
+    <pre>
+      <code [highlight]="printedCode"></code>
+    </pre>
+  </nz-collapse-panel>
+</nz-collapse>

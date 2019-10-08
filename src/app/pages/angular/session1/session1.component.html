@@ -1,0 +1,20 @@
+<div class="container">
+  <!-- 課程說明 -->
+  <app-session-description class="description-panel" name="S1"
+    title="Session 1 - Component"
+    [categories]="sessionTags"
+    introduction="組件：構成頁面且可重複的元素，負責處理View的邏輯"
+    [difficulty]="1"
+    [usefulness]="5">
+  </app-session-description>
+
+  <div class="tutorial-panel">
+    <app-session-handson [stepDescription]="sessionStep">
+      <app-code1s1 #step1 class="step step1"></app-code1s1>
+      <app-code2s1 #step2 class="step step2"></app-code2s1>
+      <app-hello-world #step3 class="step step3"></app-hello-world>
+      <app-life-cycle #step4 class="step step4"></app-life-cycle>
+    </app-session-handson>
+  </div>
+</div>
+

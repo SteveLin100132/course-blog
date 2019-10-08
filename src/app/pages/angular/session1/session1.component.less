@@ -1,0 +1,46 @@
+@import './../../../shared/styles/global.less';
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  --tutorial-height: 100px;
+  --ps-max-height: 100px;
+  .tutorial-panel {
+    padding: 24px;
+    width: 100%;
+    height: var(--tutorial-height);
+
+    .ps {
+      display: block;
+      max-height: var(--ps-max-height);;
+    }
+
+    .step {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: hidden;
+      max-height: var(--ps-max-height);
+
+      &:hover {
+        overflow: auto;
+      }
+    }
+
+    .step::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .step::-webkit-scrollbar-thumb {
+      background: #00A2AE;
+      border-radius: 20px;
+    }
+
+    .step::-webkit-scrollbar-track {
+      background: rgba(150, 150, 150, 0.25);
+      border-radius: 20px;
+    }
+  }
+}

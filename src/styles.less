@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import './../node_modules/highlight.js/styles/vs.css';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+:root {
+  font-family: '微軟正黑體', 'Arial';
+  font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+pre {
+  padding-left: 10px;
+  border: 1px solid #E8E8E8;
+}

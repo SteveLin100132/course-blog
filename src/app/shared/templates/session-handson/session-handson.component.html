@@ -1,0 +1,40 @@
+<div class="container">
+  <!-- 學習步驟 -->
+  <nz-card>
+    <nz-steps [nzCurrent]="step">
+      <nz-step *ngFor="let step of stepDescription"
+        [nzTitle]="step.title"
+        [nzDescription]="step.description"></nz-step>
+    </nz-steps>
+  </nz-card>
+
+  <!-- 實際演練 -->
+  <nz-card class="practice-panel">
+    <nz-tabset (nzSelectedIndexChange)="onStepChanged($event)">
+      <nz-tab *ngIf="stepContent1 && stepDescription[0]"
+        [nzTitle]="stepDescription[0].title">
+        <ng-content class="step" select=".step1"></ng-content>
+      </nz-tab>
+      <nz-tab *ngIf="stepContent2 && stepDescription[1]"
+        [nzTitle]="stepDescription[1].title">
+        <ng-content class="step" select=".step2"></ng-content>
+      </nz-tab>
+      <nz-tab *ngIf="stepContent3 && stepDescription[2]"
+        [nzTitle]="stepDescription[2].title">
+        <ng-content class="step" select=".step3"></ng-content>
+      </nz-tab>
+      <nz-tab *ngIf="stepContent4 && stepDescription[3]"
+        [nzTitle]="stepDescription[3].title">
+        <ng-content class="step" select=".step4"></ng-content>
+      </nz-tab>
+      <nz-tab *ngIf="stepContent5 && stepDescription[4]"
+        [nzTitle]="stepDescription[4].title">
+        <ng-content class="step" select=".step5"></ng-content>
+      </nz-tab>
+      <nz-tab *ngIf="stepContent6 && stepDescription[5]"
+        [nzTitle]="stepDescription[5].title">
+        <ng-content class="step" select=".result"></ng-content>
+      </nz-tab>
+    </nz-tabset>
+  </nz-card>
+</div>

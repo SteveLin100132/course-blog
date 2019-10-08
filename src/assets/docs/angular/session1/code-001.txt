@@ -1,0 +1,2 @@
+# 打開cmd輸入
+$ ng g c <Component Name>

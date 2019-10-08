@@ -1,0 +1,23 @@
+<div class="ps" [perfectScrollbar]="perfectScrollbarConfig">
+  <h3>Component生成指令</h3>
+  <nz-spin [nzSpinning]="loading">
+    <pre>
+      <code *ngIf="code" [highlight]="code[0]"></code>
+    </pre>
+  </nz-spin>
+
+  <h3>產生Component的資料結構</h3>
+  <nz-tree [nzData]="nodes" [nzTreeTemplate]="nzTreeTemplate"></nz-tree>
+  <ng-template #nzTreeTemplate let-node>
+    <span class="custom-node">
+      <span *ngIf="!node.isLeaf">
+        <i nz-icon [nzType]="node.isExpanded ? 'folder-open' : 'folder'"></i>
+        <span class="folder-name">{{ node.title }}</span>
+      </span>
+      <span *ngIf="node.isLeaf">
+        <i nz-icon nzType="file"></i>
+        <span class="file-name">{{ node.title }}</span>
+      </span>
+    </span>
+  </ng-template>
+</div>
