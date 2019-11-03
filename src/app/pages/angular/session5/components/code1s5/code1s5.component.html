@@ -1,0 +1,38 @@
+<nz-collapse [nzBordered]="false" nzAccordion>
+  <nz-collapse-panel nzHeader="app.component.html" nzActive="true">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[0]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app.component.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[1]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="Result" nzActive="false">
+    <form #myForm="ngForm">
+      <label for="account">帳號 </label>
+      <input nz-input
+        nzSize="default"
+        type="text"
+        id="account"
+        name="account"
+        #account="ngModel"
+        ngModel
+        required>
+      <button nz-button nzType="primary" [disabled]="!myForm.valid">
+        Submit
+      </button>
+      <span *ngIf="account.touched && account.errors">
+        <code *ngIf="account.errors['required']"
+          style="color: red; margin-left: 10px">
+          必填
+        </code>
+      </span>
+    </form>
+  </nz-collapse-panel>
+</nz-collapse>

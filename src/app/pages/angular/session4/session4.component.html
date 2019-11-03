@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- 課程說明 -->
+  <app-session-description class="description-panel"
+    name="S4"
+    title="Session 4 - Component I/O"
+    [categories]="sessionTags"
+    introduction="Input/Output："
+    [difficulty]="1.5"
+    [usefulness]="4.5">
+  </app-session-description>
+
+  <div class="tutorial-panel">
+    <app-session-handson [stepDescription]="sessionStep">
+      <app-code1s4 #step1 class="step step1"></app-code1s4>
+      <app-code2s4 #step2 class="step step2"></app-code2s4>
+      <div #step3 class="step step3">
+        <h3>
+          建立一子Component提供一 <nz-tag>@Input()</nz-tag>可輸入數值，
+          並按下按鈕後乘上10倍 <nz-tag>@Output()</nz-tag>給父Component
+        </h3>
+        <app-ws04 [value]="100" (multipleResult)="showResult($event)"></app-ws04>
+      </div>
+    </app-session-handson>
+  </div>
+</div>

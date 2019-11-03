@@ -1,0 +1,33 @@
+<nz-collapse [nzBordered]="false" nzAccordion>
+  <nz-collapse-panel nzHeader="app.component.html" nzActive="true">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[0]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="child.component.html" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[1]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="child.component.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[2]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app.component.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[3]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="Result" nzActive="false">
+    <app-result2s4 (trigger)="getChildValue($event)"></app-result2s4>
+  </nz-collapse-panel>
+</nz-collapse>

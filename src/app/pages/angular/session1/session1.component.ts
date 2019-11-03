@@ -40,7 +40,8 @@ export class Session1Component
     { title: '步驟一', subtitle: '1 min', description: '創建Component' },
     { title: '步驟二', subtitle: '10 min', description: '檢視Component' },
     { title: '結果', subtitle: '10 min', description: '觀看生成後的結果' },
-    { title: '生命週期', subtitle: '10 min', description: 'Component 生命週期' }
+    { title: '生命週期', subtitle: '10 min', description: 'Component 生命週期' },
+    { title: '練習', subtitle: '10 min', description: '新增Component' }
   ];
   public perfectScrollbarConfig: PerfectScrollbarConfigInterface = {};
 

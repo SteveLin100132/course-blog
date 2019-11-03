@@ -43,10 +43,23 @@ import { Code2s2Component } from './session2/components/code2s2/code2s2.componen
 import { Code3s2Component } from './session2/components/code3s2/code3s2.component';
 import { Code4s2Component } from './session2/components/code4s2/code4s2.component';
 import { Code5s2Component } from './session2/components/code5s2/code5s2.component';
+import { Code1s3Component } from './session3/components/code1s3/code1s3.component';
+import { Code2s3Component } from './session3/components/code2s3/code2s3.component';
+import { Code3s3Component } from './session3/components/code3s3/code3s3.component';
+import { Code1s4Component } from './session4/components/code1s4/code1s4.component';
+import { Code2s4Component } from './session4/components/code2s4/code2s4.component';
+import { Code1s5Component } from './session5/components/code1s5/code1s5.component';
 import { HelloWorldComponent } from './session1/components/hello-world/hello-world.component';
 import { LifeCycleComponent } from './session1/components/life-cycle/life-cycle.component';
+import { Result2s4Component } from './session4/components/result2s4/result2s4.component';
 import { Session1Component } from './session1/session1.component';
 import { Session2Component } from './session2/session2.component';
+import { Session3Component } from './session3/session3.component';
+import { Session4Component } from './session4/session4.component';
+import { Session5Component } from './session5/session5.component';
+import { Ws02Component } from './session2/components/ws02/ws02.component';
+import { Ws03Component } from './session3/components/ws03/ws03.component';
+import { Ws04Component } from './session4/components/ws04/ws04.component';
 
 /**
  * Angular教學頁面模組
@@ -85,10 +98,23 @@ import { Session2Component } from './session2/session2.component';
     Code3s2Component,
     Code4s2Component,
     Code5s2Component,
+    Code1s3Component,
+    Code2s3Component,
+    Code3s3Component,
+    Code1s4Component,
+    Code2s4Component,
+    Code1s5Component,
     HelloWorldComponent,
     LifeCycleComponent,
+    Result2s4Component,
     Session1Component,
-    Session2Component
+    Session2Component,
+    Session3Component,
+    Session4Component,
+    Session5Component,
+    Ws02Component,
+    Ws03Component,
+    Ws04Component
   ]
 })
 export class AngularModule { }

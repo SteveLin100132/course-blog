@@ -1,0 +1,3 @@
+<div>
+  <p>Child get value {{ value }}</p>
+</div>

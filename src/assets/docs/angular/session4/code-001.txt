@@ -1,0 +1,3 @@
+<div>
+  <app-child [value]="100"></app-child>
+</div>

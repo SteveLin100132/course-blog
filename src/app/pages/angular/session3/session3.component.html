@@ -1,0 +1,26 @@
+<div class="container">
+  <!-- 課程說明 -->
+  <app-session-description class="description-panel"
+    name="S3"
+    title="Session 3 - Structure Directive"
+    [categories]="sessionTags"
+    introduction="結構指令："
+    [difficulty]="1.5"
+    [usefulness]="5">
+  </app-session-description>
+
+  <div class="tutorial-panel">
+    <app-session-handson [stepDescription]="sessionStep">
+      <app-code1s3 #step1 class="step step1"></app-code1s3>
+      <app-code2s3 #step2 class="step step2"></app-code2s3>
+      <app-code3s3 #step3 class="step step3"></app-code3s3>
+      <div #step4 class="step step4">
+        <h3>
+          請用 <nz-tag>*ngFor</nz-tag>顯示數組[1, 2, 3, 4, 5]，
+          並用 <nz-tag>*ngIf</nz-tag>過濾掉第三筆
+        </h3>
+        <app-ws03></app-ws03>
+      </div>
+    </app-session-handson>
+  </div>
+</div>

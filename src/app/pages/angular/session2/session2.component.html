@@ -1,7 +1,7 @@
 <div class="container">
   <!-- 課程說明 -->
   <app-session-description class="description-panel"
-    name="S1"
+    name="S2"
     title="Session 2 - Data Binding"
     [categories]="sessionTags"
     introduction="資料繫結：將資料呈現在畫面上，並根據條件呈現"
@@ -16,6 +16,9 @@
       <app-code3s2 #step3 class="step step3"></app-code3s2>
       <app-code4s2 #step4 class="step step4"></app-code4s2>
       <app-code5s2 #step5 class="step step5"></app-code5s2>
+      <div #step6 class="step step6">
+        <app-ws02></app-ws02>
+      </div>
     </app-session-handson>
   </div>
 </div>

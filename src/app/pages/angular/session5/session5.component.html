@@ -1,0 +1,17 @@
+<div class="container">
+  <!-- 課程說明 -->
+  <app-session-description class="description-panel"
+    name="S5"
+    title="Session 5 - Form"
+    [categories]="sessionTags"
+    introduction="表單實作："
+    [difficulty]="3"
+    [usefulness]="4">
+  </app-session-description>
+
+  <div class="tutorial-panel">
+    <app-session-handson [stepDescription]="sessionStep">
+      <app-code1s5 #step1 class="step step1"></app-code1s5>
+    </app-session-handson>
+  </div>
+</div>

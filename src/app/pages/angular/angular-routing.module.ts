@@ -15,11 +15,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { AngularComponent } from './angular.component';
 import { Session1Component } from './session1/session1.component';
 import { Session2Component } from './session2/session2.component';
+import { Session3Component } from './session3/session3.component';
+import { Session4Component } from './session4/session4.component';
+import { Session5Component } from './session5/session5.component';
 
 const routes: Routes = [
   { path: '', component: AngularComponent },
   { path: 'session1', component: Session1Component },
-  { path: 'session2', component: Session2Component }
+  { path: 'session2', component: Session2Component },
+  { path: 'session3', component: Session3Component },
+  { path: 'session4', component: Session4Component },
+  { path: 'session5', component: Session5Component }
 ];
 
 /**

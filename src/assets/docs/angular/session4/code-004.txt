@@ -1,0 +1,3 @@
+<div>
+  <app-child (trigger)="getChildValue($event)"></app-child>
+</div>

@@ -1,0 +1,9 @@
+<form #myForm="ngForm">
+  <label>帳號</label>
+  <span *ngIf="account.touched && account.errors">
+    <code *ngIf="account.errors.required">必填</code>
+  </span>
+
+  <input type="text" #account ngModel name="account" required>
+  <input type="submit" [disabled]="!myForm.valid" value="Submit">
+</form>

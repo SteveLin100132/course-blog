@@ -1,0 +1,12 @@
+<nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixButton">
+  <input nz-input [(ngModel)]="value" />
+</nz-input-group>
+<ng-template #suffixButton>
+  <button nz-button
+    nzType="primary"
+    nzSize="large"
+    style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;"
+    (click)="send()">
+    Send
+  </button>
+</ng-template>

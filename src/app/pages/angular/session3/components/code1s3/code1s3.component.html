@@ -1,0 +1,19 @@
+<nz-collapse [nzBordered]="false" nzAccordion>
+  <nz-collapse-panel nzHeader="app.component.html" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[0]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app.component.ts" nzActive="true">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[1]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="Result" nzActive="false">
+    <p>Show</p>
+  </nz-collapse-panel>
+</nz-collapse>

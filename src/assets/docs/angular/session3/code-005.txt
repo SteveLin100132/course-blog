@@ -1,0 +1,6 @@
+<p [ngSwitch]="condition">
+  <span *ngSwitchCase="'a'">a</span>
+  <span *ngSwitchCase="'b'">b</span>
+  <span *ngSwitchCase="'c'">c</span>
+  <span *ngSwitchDefault>other</span>
+</p>

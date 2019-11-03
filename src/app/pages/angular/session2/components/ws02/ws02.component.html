@@ -1,0 +1,14 @@
+<div>
+  <h3>Interpolation</h3>
+  <p>{{ text }}</p>
+  <br>
+
+  <h3>Property and Event Binding</h3>
+  <p [hidden]="!show">Show</p>
+  <button nz-button nzType="primary" (click)="toggle()">Click</button>
+  <br>
+  <br>
+
+  <h3>Two-Way Binding</h3>
+  <input nz-input placeholder="Basic usage" [(ngModel)]="text" />
+</div>
