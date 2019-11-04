@@ -1,0 +1,25 @@
+ <form [formGroup]="profileForm">
+  <label>
+    First Name:
+    <span *ngIf="profileForm.controls['firstName'].errors" style="color: red">
+      必填
+    </span>
+    <input nz-input nzSize="default" type="text" formControlName="firstName">
+  </label>
+
+  <label>
+    Last Name:
+    <span *ngIf="profileForm.controls['lastName'].errors" style="color: red">
+      必填
+    </span>
+    <input nz-input nzSize="default" type="text" formControlName="lastName">
+  </label>
+
+  <input
+    nz-button
+    nzType="primary"
+    type="submit"
+    value="Submit"
+    style="margin-top: 25px;"
+    [disabled]="!profileForm.valid">
+</form>

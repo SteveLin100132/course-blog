@@ -1,0 +1,43 @@
+<nz-collapse [nzBordered]="false" nzAccordion>
+  <nz-collapse-panel nzHeader="app.component.html" nzActive="true">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[0]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app.component.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[1]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="Result" nzActive="false">
+    <form [formGroup]="profileForm">
+      <label>
+        First Name:
+        <span *ngIf="profileForm.controls['firstName'].errors" style="color: red">
+          必填
+        </span>
+        <input nz-input nzSize="default" type="text" formControlName="firstName">
+      </label>
+
+      <label>
+        Last Name:
+        <span *ngIf="profileForm.controls['lastName'].errors" style="color: red">
+          必填
+        </span>
+        <input nz-input nzSize="default" type="text" formControlName="lastName">
+      </label>
+
+      <input
+        nz-button
+        nzType="primary"
+        type="submit"
+        value="Submit"
+        style="margin-top: 25px;"
+        [disabled]="!profileForm.valid">
+    </form>
+  </nz-collapse-panel>
+</nz-collapse>

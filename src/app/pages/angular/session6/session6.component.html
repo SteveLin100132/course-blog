@@ -1,0 +1,18 @@
+<div class="container">
+  <!-- 課程說明 -->
+  <app-session-description
+    class="description-panel"
+    name="S6"
+    title="Session 6 - Route"
+    [categories]="sessionTags"
+    introduction="路由跳轉："
+    [difficulty]="2.5"
+    [usefulness]="4.5">
+  </app-session-description>
+
+  <div class="tutorial-panel">
+    <app-session-handson [stepDescription]="sessionStep">
+      <app-code1s6 #step1 class="step step1"></app-code1s6>
+    </app-session-handson>
+  </div>
+</div>

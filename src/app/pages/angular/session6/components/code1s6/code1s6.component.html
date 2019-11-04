@@ -1,0 +1,32 @@
+<nz-collapse [nzBordered]="false" nzAccordion>
+  <nz-collapse-panel nzHeader="app.component.html" nzActive="true">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[0]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app-routing.module.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[1]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="app.component.ts" nzActive="false">
+    <nz-spin [nzSpinning]="loading">
+      <pre>
+        <code *ngIf="code" [highlight]="code[2]"></code>
+      </pre>
+    </nz-spin>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="Result" nzActive="false">
+    <a nz-button nzType="primary" [routerLink]="['/angular/session1']">
+      Session 1
+    </a>
+    <nz-divider nzType="vertical"></nz-divider>
+    <a nz-button nzType="primary" (click)="jumpSession2()">
+      Session 2
+    </a>
+  </nz-collapse-panel>
+</nz-collapse>

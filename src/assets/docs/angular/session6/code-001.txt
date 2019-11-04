@@ -1,0 +1,2 @@
+<a [routerLink]="['/angular/session1']">Session 1</a>
+<a (click)="jumpSssion2()">Session 2</a>

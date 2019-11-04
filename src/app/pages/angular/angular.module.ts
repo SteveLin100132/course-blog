@@ -10,7 +10,7 @@
  */
 
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
@@ -49,6 +49,8 @@ import { Code3s3Component } from './session3/components/code3s3/code3s3.componen
 import { Code1s4Component } from './session4/components/code1s4/code1s4.component';
 import { Code2s4Component } from './session4/components/code2s4/code2s4.component';
 import { Code1s5Component } from './session5/components/code1s5/code1s5.component';
+import { Code2s5Component } from './session5/components/code2s5/code2s5.component';
+import { Code1s6Component } from './session6/components/code1s6/code1s6.component';
 import { HelloWorldComponent } from './session1/components/hello-world/hello-world.component';
 import { LifeCycleComponent } from './session1/components/life-cycle/life-cycle.component';
 import { Result2s4Component } from './session4/components/result2s4/result2s4.component';
@@ -57,6 +59,7 @@ import { Session2Component } from './session2/session2.component';
 import { Session3Component } from './session3/session3.component';
 import { Session4Component } from './session4/session4.component';
 import { Session5Component } from './session5/session5.component';
+import { Session6Component } from './session6/session6.component';
 import { Ws02Component } from './session2/components/ws02/ws02.component';
 import { Ws03Component } from './session3/components/ws03/ws03.component';
 import { Ws04Component } from './session4/components/ws04/ws04.component';
@@ -85,6 +88,7 @@ import { Ws04Component } from './session4/components/ws04/ws04.component';
     NzMessageModule,
     NzCollapseModule,
     PerfectScrollbarModule,
+    ReactiveFormsModule,
     SessionHandsonModule,
     SessionTemplateModule,
     SessionDescriptionModule
@@ -104,6 +108,8 @@ import { Ws04Component } from './session4/components/ws04/ws04.component';
     Code1s4Component,
     Code2s4Component,
     Code1s5Component,
+    Code2s5Component,
+    Code1s6Component,
     HelloWorldComponent,
     LifeCycleComponent,
     Result2s4Component,
@@ -112,6 +118,7 @@ import { Ws04Component } from './session4/components/ws04/ws04.component';
     Session3Component,
     Session4Component,
     Session5Component,
+    Session6Component,
     Ws02Component,
     Ws03Component,
     Ws04Component
